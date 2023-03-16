@@ -1,0 +1,25 @@
+/*** Focus only ved keyboard ***/
+* {
+	&:focus {
+		outline: transparent !important;
+		box-shadow: none !important;
+	}
+	&:focus-visible {
+		box-shadow: 0 0 0 0.25rem rgb($primary, 50%) !important;
+	}
+
+}
+
+/*** Skip-to-content ***/
+.c-skip-to-content {
+	z-index: 9999;
+	position: fixed !important;
+	top: 1em;
+	left: 2em;
+	padding: .25em 1.25em !important;
+	transition: none;
+	small {
+		color: shade-color($white, 25%);
+		font-weight: 500;
+	}
+}
